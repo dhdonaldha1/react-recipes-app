@@ -18,7 +18,7 @@ class App extends Component {
         <Route path="/" exact element={<Home />} />
         <Route path="/recipes" exact element={<Recipes />} />
         <Route path="/recipes/:id" element={<SingleRecipe />} />
-        <Route component={<Default />} />
+        <Route path="*" element={<Default/>} />
       </Routes>
       </main>
     </Router>
